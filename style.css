@@ -1,0 +1,105 @@
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 20px;
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px;
+  background: white;
+  border-radius: 25px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  background: #ffef78;
+}
+
+#achievements li {
+  background: #e3f2fd;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #2196f3;
+  border-radius: 0 10px 10px 0;
+}
+
+#contacts li {
+  background: #f3e5f5;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #9c27b0;
+  border-radius: 0 10px 10px 0;
+  transition: transform 0.3s;
+}
+
+#contacts li:hover {
+  transform: scale(1.02);
+}
+
+/* Анимация для заголовков */
+h1, h2 {
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow 5s linear infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Весёлый курсор */
+body {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><text y="28" font-size="28">😄</text></svg>'), auto;
+}
+
+/* Пульсирующая кнопка (если добавим кнопку) */
+.cta-button {
+  display: block;
+  width: 200px;
+  margin: 40px auto;
+  padding: 15px;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Забавные тени для секций */
+section {
+  box-shadow: 8px 8px 0px rgba(255, 107, 107, 0.2);
+  transition: all 0.3s;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 15px;
+  background: white;
+}
+
+section:hover {
+  box-shadow: 12px 12px 0px rgba(255, 107, 107, 0.4);
+  transform: translate(-2px, -2px);
+}
